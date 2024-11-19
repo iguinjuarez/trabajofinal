@@ -1,0 +1,252 @@
+table{
+    width: 100%;
+}
+
+table, tr, th, td{
+    border: thin solid black;
+    border-collapse: collapse;
+    padding: 2px;
+}
+
+th, td{
+    text-align: center;
+}
+
+th{
+    font-size: 15px;
+}
+
+p{
+    margin: 0;
+    color: firebrick;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+select{
+    height: 100%;
+}
+
+.actions-class {
+    background-color: darkturquoise;
+    color: white;
+    padding: 7px;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.actions-class:hover{
+    background-color: lightslategray;
+}
+
+.actions-class-back{
+    background-color: red;
+    color: white;
+    padding: 7px;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.actions-class-back:hover{
+    background-color: lightslategray;
+}
+
+.action-accepted button:hover{
+    background-color: paleturquoise;
+}
+
+.card-style{
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+    margin: 0 20px;
+}
+
+.content-form{
+    padding: 20px 0px;
+    width: 100%;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
+}
+
+.form-style{
+display: flex;
+flex-direction: column;
+padding: 20px;    background: #fff;
+border-radius: 5px;
+}
+
+.form-style input{
+    width: 100%;
+}
+
+.button-search{
+    background-color: powderblue;
+    border-radius: 5px;
+}
+
+.button-search:hover{
+    background-color: darkslateblue;
+    cursor: pointer;
+}
+
+.nav-button{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-button >*:not(:last-child){
+    margin-right: 3px;
+}
+
+.li-button{
+    margin: 0;
+    list-style: none;
+}
+
+.li-button button{
+    border: 3 solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-selected{
+    background-color: lightskyblue;
+}
+
+.pagination-style{
+    display: flex;
+    justify-content: end;
+    margin-top: 5px;
+}
+
+.pagination-style  select{
+    height: 100%;
+}
+
+
+.pagination-style >*:not(:last-child){
+    margin-right: 4px;
+}
+
+.search-student{
+    display: flex;
+    margin-bottom: 5px;
+    height: 30px;
+}
+
+.text-search{
+    flex-grow: 1;
+}
+.form-add {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    padding: 0px 0px 10px;
+
+}
+.form-add label {
+    width: 100%; /* El label ocupa el 100% de la primera columna */
+}
+
+.form-add input {
+    width: 100%; 
+}
+
+.form-add p {
+    color: red; 
+    font-style: bold;
+    grid-column: 2; /* El mensaje de error se coloca en la segunda columna */
+    text-align: left;
+}
+.table-student{
+        width: 100%;
+        border: 1;
+        border-collapse: collapse;
+}
+
+.text-pagination{
+    height: 100vh;
+}
+
+.title-main{
+    color: darkmagenta;
+}
+
+.title-main:hover{
+    cursor: pointer;
+    color: tomato;
+}
+
+.auth-form {
+    position: fixed; /* Posición fija para centrarlo en la pantalla */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrado horizontal y vertical */
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para mejor visibilidad */
+    z-index: 1000; /* Asegura que quede por encima de otros elementos */
+}
+
+.auth-form h2 {
+    margin-bottom: 15px;
+    text-align: center; /* Centrar el texto */
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.auth-form button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.auth-form button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+}
+
+.auth-form button[type="button"] {
+    background-color: #f44336;
+    color: white;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* Fondo semitransparente detrás del formulario */
+.auth-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro con transparencia */
+    z-index: 999; /* Detrás del formulario pero encima del resto */
+}
