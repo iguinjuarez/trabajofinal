@@ -1,0 +1,23 @@
+{
+      "name": "backend",
+      "version": "1.0.0",
+      "main": "index.js",
+      "scripts": {
+            "test": "echo \"Error: no test specified\" && exit 1",
+            "start": "node ./src/app.js",
+            "start:debug": "SET DEBUG=ejemplo-uno:* & npm start"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "ISC",
+      "description": "Tp2 Programación Web",
+      "dependencies": {
+            "cookie-parser": "^1.4.7",
+            "debug": "^4.3.7",
+            "express": "^4.21.1",
+            "express-generator": "^4.16.1",
+            "morgan": "^1.10.0",
+            "mysql2": "^3.11.4",
+            "sequelize": "^6.37.5"
+      }
+}
